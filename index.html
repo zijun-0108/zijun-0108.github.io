@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子俊网</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('IMG_20251110_203311_644.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: gold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>这是子俊和谁？</h1>
+
+    <button id="checkBtn">查看</button>
+
+    <script>
+        const btn = document.getElementById("checkBtn");
+
+        btn.onclick = function () {
+            btn.innerHTML = "黄欣妮！";
+        }
+    </script>
+
+</body>
+
+</html>
